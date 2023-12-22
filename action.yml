@@ -1,13 +1,10 @@
-name: 'My Random Action'
-description: 'Outputs a greeting'
+name: 'My Python Action'
+description: 'Greet someone'
 inputs:
-   name:
-     description: 'Who to greet'
-     required: true
-     default: 'World'
-outputs:
-   greeting:
-     description: 'Greeting text'
+  name:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 runs:
-   using: 'node12'
-   main: 'index.js'
+  using: 'docker'
+  image: 'Dockerfile'
