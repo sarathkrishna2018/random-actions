@@ -1,0 +1,13 @@
+name: 'My Random Action'
+description: 'Outputs a greeting'
+inputs:
+   name:
+     description: 'Who to greet'
+     required: true
+     default: 'World'
+outputs:
+   greeting:
+     description: 'Greeting text'
+runs:
+   using: 'node12'
+   main: 'index.js'
